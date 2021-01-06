@@ -228,16 +228,20 @@ a:hover {
 
 
 .navbar {
-    min-height: 80px;
+    min-height: 100px;
     font-family: 'Quattrocento', serif !important;
     font-weight: bold;
     font-size: .9rem !important;
 }
 
 .navbar-brand {
-    padding: 0 15px;
-    height: 80px;
-    line-height: 80px;
+    padding: 0 25px;
+    height: 100px;
+    line-height: 100px;
+    /* vertical-align-image */
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .navbar-toggle {
@@ -246,28 +250,24 @@ a:hover {
     padding: 9px 10px !important;
 }
 
-/*.navbar-light .navbar-nav .nav-link {*/
-/*    color: rgba(0,0,0,1) !important;*/
-/*}*/
-
 @media (min-width: 992px) {
     .navbar-nav > li > a {
         /* (80px - line-height of 27px) / 2 = 26.5px */
-        padding-top: 26.5px;
-        padding-bottom: 26.5px;
+        padding-top: 36.5px;
+        padding-bottom: 36.5px;
         line-height: 27px;
         border-radius: 0 !important;
         color: black !important;
     }
 
     .navbar-nav > li.active > a {
-        padding-top: 20px;
+        padding-top: 30px;
         border-top: 6.5px solid #000000;
         color: #6e6e6e !important;
     }
 
     .navbar-nav > li > a.active {
-        margin-top: 21px;
+        margin-top: 31px;
         padding-top: 5px;
         padding-bottom: 5px;
         line-height: 27px;
@@ -448,7 +448,7 @@ a:hover {
 
 
 .mt-nav {
-    margin-top: 80px !important;
+    margin-top: 0 !important;
 }
 
 
@@ -568,8 +568,11 @@ footer.bg-color1 .div-dot::after {
     color: #707070 !important;
 }
 
-.article-blog-box .article-body {
-    /*padding-right: 5rem !important;*/
+.article-blog-box .top-hr {
+    height: 3px;
+    color: #707070;
+    opacity: 1 !important;
+    margin-bottom: 2.5rem;
 }
 
 .nav-blog-box .breadcrumb {
@@ -584,6 +587,11 @@ footer.bg-color1 .div-dot::after {
 
 .persons-box p {
     font-size: 1.15rem;
+}
+
+#myCarousel .carousel-caption {
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .flipH:before {
@@ -717,7 +725,7 @@ footer.bg-color1 .div-dot::after {
 
 
 .contact-box {
-    margin-top: 80px;
+    margin-top: 0;
 }
 
 .contact-box .form-control {
@@ -846,3 +854,5 @@ hr.vertical {
 .img-grayscale img {
     filter: grayscale(100%);
 }
+
+
