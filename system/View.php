@@ -10,12 +10,16 @@ class View{
 	protected $variables = array();		// all variable required for view
 	protected $_controller;				// folder name
 	protected $_action; 				// file name
-	
-	
-	function __construct($controller,$action) {
+    public $url_last;
+
+
+    function __construct($controller,$action) {
 		$this->_controller = $controller;
 		$this->_action = $action;
-	}
+        $url = $_SERVER['REQUEST_URI'];
+        $this->url_last = strtolower(basename($url));
+
+    }
 	
 	function set($name,$value) {
 		$this->variables[$name] = $value;

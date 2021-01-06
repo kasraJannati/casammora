@@ -18,8 +18,8 @@ class Controller {
 	public $render;
 
 	public function __construct($controller, $action) {
-		
-		$this->_controller = ucfirst($controller);
+
+        $this->_controller = ucfirst($controller);
 		$this->_action = $action;
 		
 		$model = ucfirst($controller);
@@ -31,7 +31,7 @@ class Controller {
 		
 		$this->_view = new View($this->_controller,$this->_action);
 		
-		$this->renderHeader = 0;
+		$this->renderHeader = 1;
 		$this->render = 1;
 	}
 	

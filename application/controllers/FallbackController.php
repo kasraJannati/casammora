@@ -5,8 +5,8 @@ class FallbackController extends Controller {
 	function __construct($controller, $action) {
 	
 		parent::__construct($controller, $action);
-
-	}
+        $this->_view->set('page_title','Fallback');
+    }
 
 	function index( $arg=array() ) {
 

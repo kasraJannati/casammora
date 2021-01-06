@@ -1,15 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.79.0">
+    <title><?= (isset($this->variables['page_title']) ? $this->variables['page_title'] : '') ?></title>
+    <?php load_view('css'); ?>
+</head>
+<body>
 <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light bg-white text-dark py-0">
-        <div class="container">
-            <a class="navbar-brand py-2" href="<?=BASEURL?>home">
+    <nav class="navbar navbar-expand-xl navbar-light bg-light bg-white text-dark py-0">
+        <div class="container justify-content-end">
+            <a class="navbar-brand py-2 px-0 col-12 col-sm text-center text-sm-start order-2 order-sm-1 justify-content-center justify-content-sm-start" href="<?=BASEURL?>home">
                 <img src="<?=BASEURL?>public/img/logo.png" alt="" width="266" height="62" class="d-inline-block align-top">
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler order-1 order-sm-2 mt-3 mt-sm-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon text-success"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="collapse navbar-collapse order-3" id="navbarCollapse">
                 <ul class="navbar-nav  nav-pills mb-2 mb-md-0 ms-auto">
-                    <li class="nav-item dropdown active">
+                    <li class="nav-item mx-1 dropdown active">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Communities
                         </a>
@@ -34,22 +46,22 @@
 
                         </ul>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item mx-1">
                         <a class="nav-link" href="<?=BASEURL?>decor">Decor</a>
                     </li>
-                    <li class="nav-item ">
+                    <li class="nav-item  mx-1">
                         <a class="nav-link" href="<?=BASEURL?>customercare">Customer Care</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item mx-1">
                         <a class="nav-link" href="<?=BASEURL?>about">About Us</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item mx-1">
                         <a class="nav-link" href="<?=BASEURL?>news">News & Blog</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item mx-1">
                         <a class="nav-link" href="<?=BASEURL?>contact">Contact Us</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item mx-1">
                         <a class="nav-link active rounded-0" type="button" data-bs-toggle="modal" data-bs-target="#registerModal">Register Now</a>
                     </li>
 
@@ -68,7 +80,7 @@
             <div class="container h-100">
                 <div class="row h-100 align-items-center">
                     <div class="col-12 text-center">
-                        <img class="d-block mx-auto mb-4" src="<?=BASEURL?>public/img/bootstrap-logo-white.svg" alt="" width="72" height="57">
+                        <img class="d-block mx-auto mb-4" src="<?=BASEURL?>public/img/hvp-logo.png" alt="" width="171" height="164">
                         <h1 class="font-weight-light">HUMBER VALLEY</h1>
                         <div class="divider-line col-lg-3 mx-auto my-2">PRESERVE</div>
                     </div>
@@ -196,7 +208,3 @@
 
 
 </header>
-
-
-
-

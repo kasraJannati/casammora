@@ -1,15 +1,13 @@
 <?php
 
-class ContactController extends Controller {
+class ModelController extends Controller {
 
 	function __construct($controller, $action) {
 	
 		parent::__construct($controller, $action);
-        $this->_view->set('page_title','Contact');
+        $this->_view->set('page_title','Model');
     }
 
 	function index($arg=false) {
-
 	}
-
 }
