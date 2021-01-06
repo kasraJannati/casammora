@@ -10,7 +10,7 @@
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <ul class="navbar-nav  nav-pills mb-2 mb-md-0 ms-auto">
                     <li class="nav-item dropdown active">
-                        <a class="nav-link dropdown-toggle" href="<?=BASEURL?>home" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Communities
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
