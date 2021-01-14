@@ -80,7 +80,7 @@
             <div class="container h-100">
                 <div class="row h-100 align-items-center">
                     <div class="col-12 text-center">
-                        <img class="d-block mx-auto mb-4" src="<?=BASEURL?>public/img/hvp-logo.png" alt="" width="171" height="164">
+                        <img class="d-block mx-auto mb-4 logohvpSlide" src="<?=BASEURL?>public/img/hvp-logo.png" alt="" width="119" height="84">
                         <h1 class="font-weight-light">HUMBER VALLEY</h1>
                         <div class="divider-line col-lg-3 mx-auto my-2">PRESERVE</div>
                     </div>
@@ -111,7 +111,7 @@
         <div class="container h-100">
             <div class="row h-100 align-items-center">
                 <div class="col-12 text-center">
-                    <img class="d-block mx-auto mb-4" src="<?=BASEURL?>public/img/hvp-logo.png" alt="" width="119" height="84">
+                    <img class="d-block mx-auto mb-4 logohvpSlide" src="<?=BASEURL?>public/img/hvp-logo.png" alt="" width="119" height="84">
                     <h1 class="font-weight-light">HUMBER VALLEY</h1>
                     <div class="divider-line col-lg-3 mx-auto my-2">PRESERVE</div>
                 </div>

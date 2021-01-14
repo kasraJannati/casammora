@@ -6,7 +6,7 @@
                 <img src="<?=BASEURL?>public/img/temp/slideshow01.jpg" class="d-block w-100 img-fluid" alt="...">
                 <div class="container">
                     <div class="carousel-caption">
-                        <img class="d-block mx-auto mb-4" src="<?=BASEURL?>public/img/hvp-logo.png" alt="" width="171" height="164">
+                        <img class="d-block mx-auto mb-4 logohvpSlide" src="<?=BASEURL?>public/img/hvp-logo.png" alt="" width="171" height="164">
                         <h1 class="text-shadow1 d-inline">HUMBER VALLEY</h1>
                         <div class="divider-line col-lg-3 mx-auto my-2">PRESERVE</div>
                         <a class="btn btn-lg btn-light rounded-0 px-5 mt-5" href="<?=BASEURL?>communityhumber" role="button">VIEW DETAILS</a>

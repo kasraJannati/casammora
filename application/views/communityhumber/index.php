@@ -40,14 +40,16 @@
             </div>
 
             <!-- change whit map style - start -->
-            <div class="container h-100" style="height: 600px !important; background-color: rgba(0,0,0,.2)">
+            <div class="container h-100" style=" ">
                 <div class="row h-100 align-items-center">
-                    <div class="col-12 text-center">
+                <img src="<?=BASEURL?>public/img/map/ameMap.png" alt=" ">
+                    <!-- <div class="col-12 text-center">
                         <h1 class="font-weight-light">MAP</h1>
-                    </div>
+                    </div> -->
                 </div>
             </div>
             <!-- change whit map style - end -->
+
         </div>
         <div class="row gallery-box py-5">
             <div class="col-12 img-grayscale">

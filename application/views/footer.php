@@ -5,8 +5,14 @@
         if ($this->url_last == 'about'):
             ?>
             <div class="row about-box">
-                <div class="col-12 text-center py-5">
-                    <h3 class="divider-line w-25 mx-auto my-5 pt-5 quattrocento-sans-font">About Us</h3>
+                <div class="col-md-6 text-center py-5">
+                    <img src="<?=BASEURL?>public/img/award.png" alt=" ">
+                </div>
+                <div class="col-md-6 text-center py-5">
+                    <!-- <h3 class="divider-line w-25 mx-auto my-5 pt-5 quattrocento-sans-font">Awarded</h3> -->
+                    <div class="divider-line mx-auto my-5 display-5">Awarded</div>
+
+
                     <p class="display-6 mb-0 mt-5">Town of Caledon</p>
                     <p class="display-2">Heritage Award</p>
                     <p class="display-6 quattrocento-sans-font"><small>2018</small></p>

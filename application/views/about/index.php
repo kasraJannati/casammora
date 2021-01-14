@@ -61,7 +61,7 @@
                         </div>
                     </div>
 
-                    <hr class="featurette-divider">
+                    <!-- <hr class="featurette-divider">
 
                     <div class="row featurette">
                         <div class="col-md-7 order-md-2 h-100 align-items-center">
@@ -91,7 +91,7 @@
                         <div class="col-md-5">
                             <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="600" height="600" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 600x600" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">No Image</text></svg>
                         </div>
-                    </div>
+                    </div> -->
             </div>
         </div>
 
