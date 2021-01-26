@@ -12,10 +12,10 @@
                 <div class="row">
                     <div class="col-11 col-md-10 col-lg-9 mx-auto quattrocento-sans-font text-color1">
                         <p>
-                            Expertly built, creatively designed and made with passion, each CasaMorra Home is an artistic showcase, a masterpiece of construction with a singular, personal style, tailored to the character of the home and unique to the area. Guided by the principles of integrity, dedication and excellence, and with over 27 years of experience in the construction industry and 20 years in design. We are uniquely qualified to build or renovate functional, practical homes that surpass not just the needs of the modern homeowner, but their desires as well.
+                        At CASAMORRA Homes, we believe in creating luxurious, signature homes of the highest standard. Expertly built, creatively designed and made with passion, each CASAMORRA Home is an artistic showcase; a masterpiece of construction with a singular, personal style, tailored to the character of the home and unique to the area. Guided by the principles of integrity, dedication and excellence, and with over 27 years of experience in the construction industry and 20 years of interior design, we are uniquely qualified to build functional, practical homes that surpass not just the needs of the modern homeowner, but their desires as well.
                         </p>
                         <p>
-                            When you choose CasaMorra Homes you are choosing a home that has been created with care, skill and attention to detail during every step of the process. We stand by the quality of our homes and make our customers’ satisfaction our highest priority. We are committed to doing everything in our power to ensure that at CasaMorra Homes, anything is possible.
+                        When you choose CASAMORRA Homes, you are choosing a home that has been created with care, skill and attention to detail during every step of the process. We stand by the quality of our homes and make our customers’ satisfaction our highest priority. We are committed to doing everything in our power to ensure that at CASAMORRA Homes, your home is built to your satisfaction.
                         </p>
                     </div>
                 </div>
@@ -50,10 +50,10 @@
                                 Sam Morra
                             </h2>
                             <p>
-                                Salvatore Sam Morra is the founder and president of CASAMORRA LTD. Sam has been a professional engineer for over 35 years. He grew up helping his father build their first home in Bolton and, in 1984 graduated from the University of Western, from the Civil Engineering Program. Since then, he has enjoyed a successful career as the first developer ever to relocate a Heritage Home from a third party property into a new subdivision. Together with his wife Louanne, they transformed the Graham Robinson house and the residential area into a beautiful community. In 2018, Sam and Louanne were awarded the <strong>Town of Caledon Heritage Award</strong> in recognition of their work on the Graham Robinson house.
+                            Sam Morra is the founder and president of CASAMORRA Homes. Sam Morra has been a professional engineer for over 35 years. He grew up helping his father build their first home in Bolton and in 1984 graduated from the University of Western Ontario from the Civil Engineering Program. Since then, he has enjoyed a successful career in the construction industry with 12 years as the Chief Operating Officer of Con-Drain Company (East), overseeing the creation of thousands of serviced residential lots. Sam is the first developer ever to relocate a heritage home from a third party property into a new subdivision, Graham Robinson house. Together with his wife Louanne, they transformed the Graham Robinson house and the residential area into a beautiful community. In 2018, Sam and Louanne received the Town of Caledon Heritage Award in recognition of their work on the Graham Robinson house.
                             </p>
                             <p>
-                                For 13 years, Sam served as the Chief Operating Officer of Con-Drain Company (East). Until 2018, when he became the Senior Vice President of Planning and Development for Con-Drain’s sister companies, Condor Properties and CountryWide Homes.
+                            From 2005 to 2018 Sam served as the Chief Operating Officer of Con-Drain Company (East). In 2018, he became the Senior Vice PResident of Planning and Development for Con-Drain’s Sister company, Condor Properties.
                             </p>
                         </div>
                         <div class="col-md-5">

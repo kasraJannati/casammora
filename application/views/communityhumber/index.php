@@ -23,13 +23,21 @@
                 </div>
             </div>
         </div>
-        <div class="row video-box my-5 py-4">
+
+        <!-- <div class="row video-box my-5 py-4">
             <div class="col-md-12">
                 <div class="embed-responsive embed-responsive-16by9 videoWrapper">
                     <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/137857207" allowfullscreen></iframe>
                 </div>
             </div>
+        </div> -->
+
+        <div class="row my-5 py-4">
+            <div class="col-md-12">
+                <img src="<?=BASEURL?>public/img/mapva.png" alt=" " style="width:100%;">     
+            </div>
         </div>
+
         <div class="row map-box pb-5">
             <div class="col-md-12">
                 <div class="divider-line">
@@ -51,7 +59,8 @@
             <!-- change whit map style - end -->
 
         </div>
-        <div class="row gallery-box py-5">
+
+        <!-- <div class="row gallery-box py-5">
             <div class="col-12 img-grayscale">
                 <div class="grid-gallery">
                     <div>
@@ -90,7 +99,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
 
     </div>
 </main>

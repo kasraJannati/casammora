@@ -188,8 +188,8 @@
                     <img src="<?=BASEURL?>public/img/logo.png" alt="" width="240" height="55" class="d-inline-block align-top">
                 </a>
             </div>
+<!-- 
             <div class="col-12 col-md text-center text-md-end pt-3 mt-5 mt-md-0">
-                <!-- Facebook -->
                 <span class="icon px-2">
                     <a href="#">
                         <i class="bi-instagram"></i>
@@ -210,7 +210,8 @@
                         <i class="bi-youtube"></i>
                     </a>
                 </span>
-            </div>
+            </div> -->
+            
         </div>
         <div class="row copyright-box py-3 mt-4 text-center text-md-end quattrocento-sans-font">
             <div class="col">

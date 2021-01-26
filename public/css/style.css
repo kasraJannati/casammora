@@ -122,6 +122,8 @@ a:hover {
     margin: 5rem 0;
 
     white-space: nowrap;
+    z-index:2;
+    position:relative;
 }
 
 .divider-line::before, .divider-line::after {
@@ -263,8 +265,12 @@ a:hover {
 
     .navbar-nav > li.active > a {
         padding-top: 30px;
-        border-top: 6.5px solid #000000;
-        color: #6e6e6e !important;
+        /* border-top: 6.5px solid #000000; */
+        border-top: 6.5px solid #ffffff;
+
+        /* color: #6e6e6e !important; */
+        color: #000000 !important;
+
     }
 
     .navbar-nav > li > a.active {
@@ -401,6 +407,8 @@ a:hover {
     background-repeat: no-repeat;
     margin-bottom: 7em;
     font-family: 'Quattrocento', tahoma !important;
+    position:relative;
+    overflow: hidden;
 }
 
 .head-image .divider-line::before, .head-image .divider-line::after {
@@ -420,10 +428,14 @@ a:hover {
 
 .head-image.now-open {
     background-image: url('../img/temp/HumberValley_sun-head.jpg') !important;
+    background-position: top;
+
 }
 
 .head-image.coming-soon {
     background-image: url('../img/temp/HumberValley_sun-head.jpg') !important;
+    background-position: top; 
+
 }
 
 .head-image.news-blog {
@@ -865,4 +877,44 @@ hr.vertical {
 /*****/
 .logohvpSlide{
     object-fit: contain;
+}
+.test{
+    position: absolute;
+    z-index: 2;
+    right: -95px;
+    top: 50px;
+    width: 400px;
+    height: 100px;
+    line-height: 100px;
+    background: rgba(255,255,255,0.8);
+    transform: rotate(45deg);
+    font-size: 26px;
+    text-transform: uppercase;
+    font-family: ui-sans-serif;
+    color:#000;
+}
+.blackShadow{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background: rgba(0,0,0,0.3);
+    z-index: 1;
+
+    background: rgb(0,0,0);
+    background: radial-gradient(circle, rgba(0,0,0,0.158140756302521) 0%, rgba(0,0,0,0) 100%);
+}
+.emailAddress{
+    font-weight: 700;
+}
+.bildImages{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bildImages img{
+    width: 200px;
+}
+.bildImages img:last-child{
+    margin-left:50px;
 }

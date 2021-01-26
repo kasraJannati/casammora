@@ -30,7 +30,9 @@
             </div>
             <!-- change whit map style - end -->
         </div>
-        <div class="row gallery-box py-5">
+
+
+        <!-- <div class="row gallery-box py-5">
             <div class="col-12">
                 <div class="grid-gallery">
                     <div>
@@ -69,6 +71,9 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
+
+
+
     </div>
 </main>

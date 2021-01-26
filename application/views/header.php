@@ -21,15 +21,18 @@
             </button>
             <div class="collapse navbar-collapse order-3" id="navbarCollapse">
                 <ul class="navbar-nav  nav-pills mb-2 mb-md-0 ms-auto">
+                    <li class="nav-item mx-1">
+                        <a class="nav-link" href="<?=BASEURL?>">Home</a>
+                    </li>
                     <li class="nav-item mx-1 dropdown active">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Communities
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
 
-                            <li><a class="dropdown-item">Now Open</a></li>
+                            <!-- <li><a class="dropdown-item">Now Open</a></li>
                             <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item item-child"  href="<?=BASEURL?>communitynowopen">Community Name</a></li>
+                            <li><a class="dropdown-item item-child"  href="<?=BASEURL?>communitynowopen">Community Name</a></li> -->
 
                             <li><hr class="dropdown-space"></li>
 
@@ -46,18 +49,19 @@
 
                         </ul>
                     </li>
-                    <li class="nav-item mx-1">
+          
+                    <!-- <li class="nav-item mx-1">
                         <a class="nav-link" href="<?=BASEURL?>decor">Decor</a>
-                    </li>
-                    <li class="nav-item  mx-1">
+                    </li> -->
+                    <!-- <li class="nav-item  mx-1">
                         <a class="nav-link" href="<?=BASEURL?>customercare">Customer Care</a>
-                    </li>
+                    </li> -->
                     <li class="nav-item mx-1">
                         <a class="nav-link" href="<?=BASEURL?>about">About Us</a>
                     </li>
-                    <li class="nav-item mx-1">
+                    <!-- <li class="nav-item mx-1">
                         <a class="nav-link" href="<?=BASEURL?>news">News & Blog</a>
-                    </li>
+                    </li> -->
                     <li class="nav-item mx-1">
                         <a class="nav-link" href="<?=BASEURL?>contact">Contact Us</a>
                     </li>
@@ -77,6 +81,7 @@
         if($url_last == 'communitynowopen'):
     ?>
         <div class="head-image now-open text-white">
+            <div class="test">coming soon</div>
             <div class="container h-100">
                 <div class="row h-100 align-items-center">
                     <div class="col-12 text-center">
@@ -93,7 +98,10 @@
         if($url_last == 'communitybolton'):
     ?>
         <div class="head-image text-white Bolton-Gateway">
-            <div class="container h-100">
+            <div class="test">sold out</div>
+            <div class="blackShadow"></div>
+
+            <div class="container h-100" style="position:relative; z-index:2;">
                 <div class="row h-100 align-items-center">
                     <div class="col-12 text-center">
                         <h1 class="font-weight-light">Bolton Gateway</h1>
@@ -108,6 +116,8 @@
         if($url_last == 'communityhumber'):
     ?>
     <div class="head-image coming-soon text-white">
+        <div class="test">coming soon</div>
+
         <div class="container h-100">
             <div class="row h-100 align-items-center">
                 <div class="col-12 text-center">
@@ -124,7 +134,10 @@
         if($url_last == 'communitygraham'):
     ?>
     <div class="head-image The-Graham-Robinson-House text-white">
-        <div class="container h-100">
+        <div class="test">sold</div>
+        <div class="blackShadow"></div>
+
+        <div class="container h-100" style="position:relative; z-index:2;">
             <div class="row h-100 align-items-center">
                 <div class="col-12 text-center">
                     <h1 class="font-weight-light">The Graham Robinson House</h1>
@@ -139,6 +152,8 @@
         if($url_last == 'customercare'):
     ?>
     <div class="head-image customer-care text-white">
+        <div class="blackShadow"></div>
+
         <div class="container h-100">
             <div class="row h-100 align-items-center">
                 <div class="col-12 text-center">
@@ -153,6 +168,8 @@
         if($url_last == 'about'):
     ?>
     <div class="head-image about-us text-white">
+        <div class="blackShadow"></div>
+
         <div class="container h-100">
             <div class="row h-100 align-items-center">
                 <div class="col-12 text-center">
@@ -168,6 +185,8 @@
         if($url_last == 'news'):
     ?>
     <div class="head-image news-blog text-white">
+        <div class="blackShadow"></div>
+    
         <div class="container h-100">
             <div class="row h-100 align-items-center">
                 <div class="col-12 text-center">
@@ -195,6 +214,7 @@
         if($url_last == 'decor'):
     ?>
     <div class="head-image decor text-white">
+    <div class="blackShadow"></div>
         <div class="container h-100">
             <div class="row h-100 align-items-center">
                 <div class="col-12 text-center">

@@ -17,13 +17,6 @@
 */
 
 	$config['hostname'] = 'localhost';
-	$config['database'] = 'Sierra-web-db-new';
+	$config['database'] = 'casamorra';
 	$config['username'] = 'root';
 	$config['password'] = '';
-
-
-	// for live website
-	// $config['hostname'] = 'localhost';
-	// $config['database'] = 'kasra_Sierra-web-db';
-	// $config['username'] = 'kasra_Sierra-web-db';
-	// $config['password'] = 'Sierra-web-db1';

@@ -2,6 +2,9 @@
     <div id="myCarousel" class="carousel slide quattrocento-sans-font" data-bs-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
+                <div class="test">coming soon</div>
+                <div class="blackShadow"></div>
+
                 <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
                 <img src="<?=BASEURL?>public/img/temp/slideshow01.jpg" class="d-block w-100 img-fluid" alt="...">
                 <div class="container">
@@ -14,6 +17,9 @@
                 </div>
             </div>
             <div class="carousel-item">
+                <div class="test">sold out</div>
+                <div class="blackShadow"></div>
+
                 <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
                 <img src="<?=BASEURL?>public/img/temp/slideshow02.jpg" class="d-block w-100" alt="...">
                 <div class="container">
@@ -24,6 +30,9 @@
                 </div>
             </div>
             <div class="carousel-item">
+                <div class="test">sold</div>
+                <div class="blackShadow"></div>
+
                 <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
                 <img src="<?=BASEURL?>public/img/temp/slideshow03.jpg" class="d-block w-100" alt="...">
                 <div class="container">
@@ -68,16 +77,14 @@
             </div>
         </div>
 
-        <div class="row my-5 py-4">
+        <!-- <div class="row my-5 py-4">
             <div class="col-md-12">
-<!--                <div class="embed-responsive embed-responsive-16by9 videoWrapper">-->
-<!--                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/v64KOxKVLVg" allowfullscreen></iframe>-->
-<!--                </div>-->
                 <div class="embed-responsive embed-responsive-16by9 videoWrapper">
                    <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/137857207" allowfullscreen></iframe>
                 </div>
             </div>
-        </div>
+        </div> -->
+
         <div class="row my-5 py-4">
         </div>
         <div class="row community-box pb-5 quattrocento-sans-font justify-content-center">
@@ -137,6 +144,13 @@
                     </div>
                 </div>
             </div>
+        </div>
+
+
+        <div class="bildImages">
+            <img src="<?=BASEURL?>public/img/bild.png" alt="...">
+            <img src="<?=BASEURL?>public/img/tar.png" alt="...">
+
         </div>
 
     </div>

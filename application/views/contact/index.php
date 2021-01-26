@@ -10,7 +10,7 @@
 
         </div>
         <div class="row text-start justify-content-center my-5 py-5 quattrocento-sans-font">
-            <div class="col-12 col-lg-7 col-xl-7 mb-5 mb-lg-0">
+            <div class="col-12 col-lg-7 col-xl-7 mb-5 mb-lg-0" style="border-bottom:1px solid #bcbcbc; padding-bottom:50px;">
                 <form class="row g-3">
                     <div class="col-md-6 px-3">
                         <input type="text" class="form-control rounded-0" id="first_name" placeholder="First Name *">
@@ -64,7 +64,9 @@
                     </div>
                 </form>
             </div>
-            <div class="col-1 d-none d-lg-block">
+       
+            <div class="text-center mt-4 emailAddress"><a href="mailto:info@CASAMORRA.com">info@CASAMORRA.com</a></div>
+            <!-- <div class="col-1 d-none d-lg-block">
                 <hr class="vertical">
             </div>
             <div class="col-12 col-lg-4 col-xl-2 ">
@@ -84,7 +86,7 @@
                         </ol>
                     </div>
                 </div>
-            </div>
+            </div> -->
 
         </div>
     </div>
