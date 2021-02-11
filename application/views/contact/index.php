@@ -11,32 +11,33 @@
         </div>
         <div class="row text-start justify-content-center my-5 py-5 quattrocento-sans-font">
             <div class="col-12 col-lg-7 col-xl-7 mb-5 mb-lg-0" style="border-bottom:1px solid #bcbcbc; padding-bottom:50px;">
-                <form class="row g-3">
+
+                <form class="row g-3" action="<?=BASEURL?>contactForm" method="post">
                     <div class="col-md-6 px-3">
-                        <input type="text" class="form-control rounded-0" id="first_name" placeholder="First Name *">
+                        <input type="text" class="form-control rounded-0" id="first_name" name="first_name" placeholder="First Name *">
                     </div>
                     <div class="col-md-6 px-3">
-                        <input type="text" class="form-control rounded-0" id="last_name" placeholder="Last Name *">
+                        <input type="text" class="form-control rounded-0" id="last_name" name="last_name" placeholder="Last Name *">
                     </div>
                     <div class="col-md-6 px-3">
-                        <input type="email" class="form-control rounded-0" id="email_address" placeholder="Email Address *">
+                        <input type="email" class="form-control rounded-0" id="email_address" name="email_address" placeholder="Email Address *" required>
                     </div>
                     <div class="col-md-6 px-3">
-                        <input type="text" class="form-control rounded-0" id="phone_number" placeholder="Phone Number *">
+                        <input type="text" class="form-control rounded-0" id="phone_number" name="phone_number" placeholder="Phone Number" required>
                     </div>
                     <div class="col-md-6 px-3">
-                        <textarea class="form-control rounded-0" placeholder="Your Message" id="message" rows="11"></textarea>
+                        <textarea class="form-control rounded-0" placeholder="Your Message" name="message" id="message" rows="11"></textarea>
                     </div>
                     <div class="col-md-6 px-3">
                         <div class="row">
                             <div class="col-12 mt-2">
                                 <label class="form-label">Are you a broker?</label>
                                 <div class="form-check form-check-inline float-end">
-                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="No">
                                     <label class="form-check-label" for="inlineRadio2">No</label>
                                 </div>
                                 <div class="form-check form-check-inline float-end">
-                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="Yes">
                                     <label class="form-check-label" for="inlineRadio1">Yes</label>
                                 </div>
                             </div>
@@ -45,7 +46,7 @@
                         <div class="row">
                             <div class="col-12">
                                 <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" name="consent">
                                     <label class="form-check-label" for="flexCheckDefault">
                                         <small>
                                             I Consent. CasaMorra seeks your consent to send  you commercial electronic messages (such as email). You may withdraw your consent at any time. By clicking  above you attest that you are the sole holder and user of this email account.*
@@ -63,6 +64,14 @@
                         </div>
                     </div>
                 </form>
+
+                <?php
+                    if(isset($_GET['sent'])){
+                        $messageSent = unserialize(urldecode($_GET['sent']));
+                        echo '<p class="messageSent">'.$messageSent.'</p>';
+                    }
+                ?>
+
             </div>
        
             <div class="text-center mt-4 emailAddress"><a href="mailto:info@CASAMORRA.com">info@CASAMORRA.com</a></div>
@@ -91,3 +100,14 @@
         </div>
     </div>
 </main>
+
+<style>
+p.messageSent {
+    text-align: center;
+    margin: 20px 0 0 0;
+    font-family: 'Quattrocento', serif !important;
+    text-transform: capitalize;
+    color: black;
+    font-weight: 700;
+}
+</style>

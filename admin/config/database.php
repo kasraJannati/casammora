@@ -18,5 +18,11 @@
 $config['hostname'] = 'localhost';
 $config['database'] = 'casamorra';
 $config['username'] = 'root';
-$config['password'] = 'root';
+$config['password'] = '';
+
+
+// $config['hostname'] = 'localhost';
+// $config['database'] = 'casamorra_db';
+// $config['username'] = 'casamorra';
+// $config['password'] = '2yLS9G]Yw2AY';
 

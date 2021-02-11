@@ -20,10 +20,14 @@
 				
 				<?php if($property_type == 'aboutpage'): ?>
 					<h1>About - Add</h1>
-				<?php elseif($property_type == 'faqpage'): ?>
-					<h1>FAQ - Add</h1>
-				<?php elseif($property_type == 'testimonial'): ?>
-					<h1>Testimonial - Add</h1>
+				<?php elseif($property_type == 'policypage'): ?>
+					<h1>Policy - Add</h1>
+				<?php elseif($property_type == 'homepage'): ?>
+					<h1>Home - Add</h1>
+				<?php elseif($property_type == 'slideshow'): ?>
+					<h1>Sildeshow - Add</h1>
+				<?php elseif($property_type == 'communities'): ?>
+					<h1>communities - Add</h1>
 				<?php else: ?>
 					<h1>Status - Add</h1>
 				<?php endif;?>
@@ -56,7 +60,7 @@
 							<h3 class="panel-title">Sub - Title</h3>
 						</div>
 						<div class="panel-body">
-							<input type="text" class="form-control" name="sub_title" placeholder="Sub Title" <?php if($property_type == 'faqpage' || $property_type == 'testimonial' || $property_type == 'documents' || $property_type == 'suites' || $property_type == 'building'):?>	disabled <?php endif;?>>
+							<input type="text" class="form-control" name="sub_title" placeholder="Sub Title" <?php if($property_type == 'aboutpage' || $property_type == 'policypage' || $property_type == 'homepage' || $property_type == 'slideshow' || $property_type == 'communities'):?>	disabled <?php endif;?>>
 						</div>
 					</div>
 				</div>
@@ -64,26 +68,20 @@
 			</div>
 
 
-			<div class="row<?php if($property_type == 'statuspage'):?> disabledBox <?php endif;?>"> 
+			<div class="row<?php if($property_type == 'policypage'):?> disabledBox <?php endif;?>"> 
 
 
-
-
-
-				<?php if($property_type == 'documents'):?>
+				<?php if($property_type == 'communities'):?>
 					<div class="col-sm-6">
 						<div class="panel panel-default">
 							<div class="panel-heading">
-								<h3 class="panel-title">Select the category</h3>
+								<h3 class="panel-title">Status</h3>
 							</div>
 							<div class="panel-body">
 								<select name="architech">
-									<option value="Planning and Architecture">Planning and Architecture</option>
-									<option value="Administrative Documents">Administrative Documents</option>
-									<option value="Community Consultation">Community Consultation</option>
-									<option value="Environmental Reports">Environmental Reports</option>
-									<option value="Engineering Reports">Engineering Reports</option>
-									<option value="Other">Other</option>
+									<option value="coming soon">coming soon</option>
+									<option value="sold out">sold out</option>
+									<option value="now open">now open</option>
 								</select>
 							</div>
 						</div>
@@ -91,14 +89,14 @@
 				<?php endif;?>
 
 
-				<?php if($property_type != 'documents'):?>
+				<?php if($property_type != 'communities'):?>
 				<div class="col-sm-6">
 					<div class="panel panel-default">
 						<div class="panel-heading">
 							<h3 class="panel-title">Architect</h3>
 						</div>
 						<div class="panel-body">
-							<input type="text" class="form-control" name="architech" placeholder="Architect" <?php if($property_type == 'aboutpage' || $property_type == 'faqpage' || $property_type == 'testimonial' || $property_type == 'suites' || $property_type == 'building'):?>	disabled <?php endif;?> >
+							<input type="text" class="form-control" name="architech" placeholder="Architect" <?php if($property_type == 'aboutpage' || $property_type == 'policypage' || $property_type == 'homepage' || $property_type == 'slideshow' || $property_type == 'building'):?>	disabled <?php endif;?> >
 						</div>
 					</div>
 				</div>
@@ -107,10 +105,10 @@
 				<div class="col-sm-6">
 					<div class="panel panel-default">
 						<div class="panel-heading">
-							<h3 class="panel-title">Location<?php if($property_type == 'documents'){ echo "- The name of pdf file"; }?> </h3>
+							<h3 class="panel-title">Location<?php if($property_type == 'policypage'){ echo "- The name of pdf file"; }?> </h3>
 						</div>
 						<div class="panel-body">
-							<input type="text" class="form-control" name="location" placeholder="Location" <?php if($property_type == 'faqpage' || $property_type == 'testimonial' || $property_type == 'statistics' || $property_type == 'suites' || $property_type == 'building') :?>	disabled <?php endif;?>>
+							<input type="text" class="form-control" name="location" placeholder="Location" <?php if($property_type == 'aboutpage' || $property_type == 'homepage' || $property_type == 'suites' || $property_type == 'building') :?>	disabled <?php endif;?>>
 						</div>
 					</div>
 				</div>
@@ -125,7 +123,7 @@
 							<h3 class="panel-title">Short Description</h3>
 						</div>
 						<div class="panel-body">
-							<textarea class="form-control" rows="5" name="short_description" <?php if($property_type == 'aboutpage' || $property_type == 'faqpage' || $property_type == 'testimonial' || $property_type == 'statistics' || $property_type == 'documents' || $property_type == 'suites' || $property_type == 'building'):?>	disabled <?php endif;?>></textarea>
+							<textarea class="form-control" rows="5" name="short_description" <?php if($property_type == 'aboutpage' || $property_type == 'policypage' || $property_type == 'homepage' || $property_type == 'slideshow' || $property_type == 'documents' || $property_type == 'suites' || $property_type == 'building'):?>	disabled <?php endif;?>></textarea>
 						</div>
 					</div>
 				</div>
@@ -158,8 +156,8 @@
 			
 			<hr>
 
-			<div class="row<?php if($property_type == 'statuspage' ||
-									$property_type == 'faqpage' || 
+			<div class="row<?php if($property_type == 'policypage' ||
+									$property_type == 'homepage' || 
 									$property_type == 'testimonial' || 
 									$property_type == 'statisticscard' || 
 									$property_type == 'documents'):?> disabledBox <?php endif;?>">
@@ -188,7 +186,7 @@
 
 				</div>
 
-				<div class="col-sm-6 <?php if($property_type == 'aboutpage' || $property_type == 'statistics' || $property_type == 'suites' || $property_type == 'building'):?>	disabledBox <?php endif;?>" >
+				<div class="col-sm-6 <?php if($property_type == 'aboutpage' || $property_type == 'policypage' || $property_type == 'homepage' || $property_type == 'building'):?>	disabledBox <?php endif;?>" >
 					<div class="panel panel-default">
 						<div class="panel-heading">
 							<h3 class="panel-title">Logo</h3>
@@ -213,7 +211,7 @@
 
 			<hr>
 
-			<div class="row<?php if($property_type == 'statuspage' || $property_type == 'faqpage' || $property_type == 'testimonial' || $property_type == 'statistics' || $property_type == 'statisticscard' || $property_type == 'suites' || $property_type == 'building' || $property_type == 'documents'):?> disabledBox <?php endif;?>">
+			<div class="row<?php if($property_type == 'policypage' || $property_type == 'homepage' || $property_type == 'slideshow' || $property_type == 'statistics' || $property_type == 'statisticscard' || $property_type == 'suites' || $property_type == 'building' || $property_type == 'documents'):?> disabledBox <?php endif;?>">
 
 				<div class="col-sm-6<?php if($property_type == 'aboutpage'):?>	disabledBox <?php endif;?>">
 					<div class="panel panel-default">

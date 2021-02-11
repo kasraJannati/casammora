@@ -10,9 +10,9 @@
  *
  */
 
-	if($_SERVER['SERVER_NAME'] == 'localhost') define ('DEVELOPMENT_ENVIRONMENT', true);
-	else define ('DEVELOPMENT_ENVIRONMENT', true);
-
+	// if($_SERVER['SERVER_NAME'] == 'localhost') define ('DEVELOPMENT_ENVIRONMENT', true);
+	// else define ('DEVELOPMENT_ENVIRONMENT', true);
+	define ('DEVELOPMENT_ENVIRONMENT', true);
 
 
 

@@ -20,13 +20,7 @@ class PropertyController extends Controller {
 		$this->render = 0;
 	}
 
-	function communities($arg=false){
-		$properties = $this->_model->get_all_properties(1);
-
-		$this->session->set('property_type', 'communities');
-		$this->_view->set('property_type', 'communities');
-		$this->_view->set('properties', $properties);
-	}
+	
 
 	function commercial($arg=false){
 		$properties = $this->_model->get_all_properties(2);
@@ -46,7 +40,7 @@ class PropertyController extends Controller {
 		$property_type = $this->session->get('property_type');
 
 		$type = 0;
-		if($property_type == 'communities') $type = 1;
+		// if($property_type == 'communities') $type = 1;
 		if($property_type == 'commercial') $type = 2;
 
 		$value = array(
@@ -115,8 +109,11 @@ class PropertyController extends Controller {
 
 		$this->_model->insert_properties($value);
 
-		if($property_type == 'communities') header("Location: " . BASEURL . "property/communities");
-		if($property_type == 'commercial') header("Location: " . BASEURL . "property/commercial");
+		// if($property_type == 'communities') header("Location: " . BASEURL . "property/communities");
+		// if($property_type == 'commercial') header("Location: " . BASEURL . "property/commercial");
+
+
+		echo "asdajsgdjhkjasd";
 	}
 
 	function editproperty($arg=false){
@@ -137,7 +134,7 @@ class PropertyController extends Controller {
 		$property_type = $this->session->get('property_type');
 
 		$type = 0;
-		if($property_type == 'communities') $type = 1;
+		// if($property_type == 'communities') $type = 1;
 		if($property_type == 'commercial') $type = 2;
 
 		$value = array(
@@ -209,7 +206,7 @@ class PropertyController extends Controller {
 		);
 		$this->_model->update_properties($value, $where);
 
-		if($property_type == 'communities') header("Location: " . BASEURL . "property/communities");
+		// if($property_type == 'communities') header("Location: " . BASEURL . "property/communities");
 		if($property_type == 'commercial') header("Location: " . BASEURL . "property/commercial");
 	}
 
@@ -226,37 +223,27 @@ class PropertyController extends Controller {
 
 		$property_type = $this->session->get('property_type');
 
-		if($property_type == 'communities') header("Location: " . BASEURL . "property/communities");
+		// if($property_type == 'communities') header("Location: " . BASEURL . "property/communities"); 
 		if($property_type == 'commercial') header("Location: " . BASEURL . "property/commercial");
 	}
 
 
 
-
-
-
-
-
-
-
-
-
-	function customhomes(){
+/*****/
+	function homepage($arg=false){
 		$properties = $this->_model->get_all_customproperties(1);
 
-		$this->session->set('property_type', 'customhomes');
-		$this->_view->set('property_type', 'customhomes');
+		$this->session->set('property_type', 'homepage');
+		$this->_view->set('property_type', 'homepage');
 		$this->_view->set('properties', $properties);
 	}
-
-	function cotage($arg=false){
+	function policypage($arg=false){
 		$properties = $this->_model->get_all_customproperties(2);
 
-		$this->session->set('property_type', 'cotage');
-		$this->_view->set('property_type', 'cotage');
+		$this->session->set('property_type', 'policypage');
+		$this->_view->set('property_type', 'policypage');
 		$this->_view->set('properties', $properties);
 	}
-
 	function aboutpage($arg=false){
 		$properties = $this->_model->get_all_customproperties(3);
 
@@ -264,94 +251,22 @@ class PropertyController extends Controller {
 		$this->_view->set('property_type', 'aboutpage');
 		$this->_view->set('properties', $properties);
 	}
-
-	function statuspage($arg=false){
+	function slideshow($arg=false){
 		$properties = $this->_model->get_all_customproperties(4);
 
-		$this->session->set('property_type', 'statuspage');
-		$this->_view->set('property_type', 'statuspage');
+		$this->session->set('property_type', 'slideshow');
+		$this->_view->set('property_type', 'slideshow');
 		$this->_view->set('properties', $properties);
 	}
-
-	function faqpage($arg=false){
+	function communities($arg=false){
 		$properties = $this->_model->get_all_customproperties(5);
 
-		$this->session->set('property_type', 'faqpage');
-		$this->_view->set('property_type', 'faqpage');
+		$this->session->set('property_type', 'communities');
+		$this->_view->set('property_type', 'communities');
 		$this->_view->set('properties', $properties);
 	}
-
-	function homepage($arg=false){
-		$properties = $this->_model->get_all_customproperties(6);
-
-		$this->session->set('property_type', 'homepage');
-		$this->_view->set('property_type', 'homepage');
-		$this->_view->set('properties', $properties);
-	}
-
-	function testimonial($arg=false){
-		$properties = $this->_model->get_all_customproperties(7);
-
-		$this->session->set('property_type', 'testimonial');
-		$this->_view->set('property_type', 'testimonial');
-		$this->_view->set('properties', $properties);
-	}
-
-	function building($arg=false){
-		$properties = $this->_model->get_all_customproperties(8);
-
-		$this->session->set('property_type', 'building');
-		$this->_view->set('property_type', 'building');
-		$this->_view->set('properties', $properties);
-	}
-
-	function suites($arg=false){
-		$properties = $this->_model->get_all_customproperties(9);
-
-		$this->session->set('property_type', 'suites');
-		$this->_view->set('property_type', 'suites');
-		$this->_view->set('properties', $properties);
-	}
-
-	function statistics($arg=false){
-		$properties = $this->_model->get_all_customproperties(10);
-
-		$this->session->set('property_type', 'statistics');
-		$this->_view->set('property_type', 'statistics');
-		$this->_view->set('properties', $properties);
-	}
-
-	function statisticscard($arg=false){
-		$properties = $this->_model->get_all_customproperties(11);
-
-		$this->session->set('property_type', 'statisticscard');
-		$this->_view->set('property_type', 'statisticscard');
-		$this->_view->set('properties', $properties);
-	}
-
-	function vision($arg=false){
-		$properties = $this->_model->get_all_customproperties(12);
-
-		$this->session->set('property_type', 'vision');
-		$this->_view->set('property_type', 'vision');
-		$this->_view->set('properties', $properties);
-	}
-
-	function site($arg=false){
-		$properties = $this->_model->get_all_customproperties(13);
-
-		$this->session->set('property_type', 'site');
-		$this->_view->set('property_type', 'site');
-		$this->_view->set('properties', $properties);
-	}
-
-	function documents($arg=false){
-		$properties = $this->_model->get_all_customproperties(14);
-
-		$this->session->set('property_type', 'documents');
-		$this->_view->set('property_type', 'documents');
-		$this->_view->set('properties', $properties);
-	}
+/*****/
+	
 
 	function addcustomproperty($arg=false){
 		$this->_view->set('property_type', $this->session->get('property_type'));
@@ -363,23 +278,12 @@ class PropertyController extends Controller {
 		$property_type = $this->session->get('property_type');
 
 		$type = 0;
-		if($property_type == 'customhomes') $type = 1;
-		if($property_type == 'cotage') $type = 2;
+
 		if($property_type == 'aboutpage') $type = 3;
-		if($property_type == 'statuspage') $type = 4;
-		if($property_type == 'faqpage') $type = 5;
-		if($property_type == 'homepage') $type = 6;
-		if($property_type == 'testimonial') $type = 7;
-		if($property_type == 'building') $type = 8;
-		if($property_type == 'suites') $type = 9;
-		if($property_type == 'statistics') $type = 10;
-		if($property_type == 'statisticscard') $type = 11;
-		if($property_type == 'vision') $type = 12;
-		if($property_type == 'site') $type = 13;
-		if($property_type == 'documents') $type = 14;
-
-
-
+		if($property_type == 'policypage') $type = 2;
+		if($property_type == 'homepage') $type = 1;
+		if($property_type == 'slideshow') $type = 4;
+		if($property_type == 'communities') $type = 5;
 
 
 
@@ -412,20 +316,15 @@ class PropertyController extends Controller {
 
 		$this->_model->insert_customproperty($value);
 
-		if($property_type == 'documents') header("Location: " . BASEURL . "property/documents");
-		if($property_type == 'site') header("Location: " . BASEURL . "property/site");
-		if($property_type == 'vision') header("Location: " . BASEURL . "property/vision");
-		if($property_type == 'statisticscard') header("Location: " . BASEURL . "property/statisticscard");
-		if($property_type == 'statistics') header("Location: " . BASEURL . "property/statistics");
-		if($property_type == 'suites') header("Location: " . BASEURL . "property/suites");
-		if($property_type == 'building') header("Location: " . BASEURL . "property/building");
-		if($property_type == 'testimonial') header("Location: " . BASEURL . "property/testimonial");
-		if($property_type == 'homepage') header("Location: " . BASEURL . "property/homepage");
-		if($property_type == 'faqpage') header("Location: " . BASEURL . "property/faqpage");
-		if($property_type == 'statuspage') header("Location: " . BASEURL . "property/statuspage");
+	
 		if($property_type == 'aboutpage') header("Location: " . BASEURL . "property/aboutpage");
-		if($property_type == 'cotage') header("Location: " . BASEURL . "property/cotage");
-		if($property_type == 'customhomes') header("Location: " . BASEURL . "property/customhomes");
+		if($property_type == 'homepage') header("Location: " . BASEURL . "property/homepage");
+		if($property_type == 'policypage') header("Location: " . BASEURL . "property/policypage");
+		if($property_type == 'slideshow') header("Location: " . BASEURL . "property/slideshow");
+		if($property_type == 'communities') header("Location: " . BASEURL . "property/communities");
+
+
+	
 	}
 
 
@@ -446,24 +345,12 @@ class PropertyController extends Controller {
 		$property_type = $this->session->get('property_type');
 
 		$type = 0;
-		if($property_type == 'customhomes') $type = 1;
-		if($property_type == 'cotage') $type = 2;
+		
 		if($property_type == 'aboutpage') $type = 3;
-		if($property_type == 'statuspage') $type = 4;
-		if($property_type == 'faqpage') $type = 5;
-		if($property_type == 'homepage') $type = 6;
-		if($property_type == 'testimonial') $type = 7;
-		if($property_type == 'building') $type = 8;
-		if($property_type == 'suites') $type = 9;
-		if($property_type == 'statistics') $type = 10;
-		if($property_type == 'statisticscard') $type = 11;
-		if($property_type == 'vision') $type = 12;
-		if($property_type == 'site') $type = 13;
-		if($property_type == 'documents') $type = 14;
-
-
-
-
+		if($property_type == 'policypage') $type = 2;
+		if($property_type == 'homepage') $type = 1;
+		if($property_type == 'slideshow') $type = 4;
+		if($property_type == 'communities') $type = 5;
 
 
 
@@ -501,20 +388,16 @@ class PropertyController extends Controller {
 		);
 		$this->_model->update_customproperty($value, $where);
 
-		if($property_type == 'documents') header("Location: " . BASEURL . "property/documents");
-		if($property_type == 'site') header("Location: " . BASEURL . "property/site");
-		if($property_type == 'vision') header("Location: " . BASEURL . "property/vision");
-		if($property_type == 'statisticscard') header("Location: " . BASEURL . "property/statisticscard");
-		if($property_type == 'statistics') header("Location: " . BASEURL . "property/statistics");
-		if($property_type == 'suites') header("Location: " . BASEURL . "property/suites");
-		if($property_type == 'building') header("Location: " . BASEURL . "property/building");
-		if($property_type == 'testimonial') header("Location: " . BASEURL . "property/testimonial");
-		if($property_type == 'homepage') header("Location: " . BASEURL . "property/homepage");
-		if($property_type == 'faqpage') header("Location: " . BASEURL . "property/faqpage");
-		if($property_type == 'statuspage') header("Location: " . BASEURL . "property/statuspage");
+
 		if($property_type == 'aboutpage') header("Location: " . BASEURL . "property/aboutpage");
-		if($property_type == 'cotage') header("Location: " . BASEURL . "property/cotage");
-		if($property_type == 'customhomes') header("Location: " . BASEURL . "property/customhomes");
+		if($property_type == 'policypage') header("Location: " . BASEURL . "property/policypage");
+		if($property_type == 'homepage') header("Location: " . BASEURL . "property/homepage");
+		if($property_type == 'slideshow') header("Location: " . BASEURL . "property/slideshow");
+		if($property_type == 'communities') header("Location: " . BASEURL . "property/communities");
+
+
+
+
 	}
 
 	function deletecustomproperty($arg=false){
@@ -527,28 +410,16 @@ class PropertyController extends Controller {
 
 		$property_type = $this->session->get('property_type');
 
-		if($property_type == 'documents') header("Location: " . BASEURL . "property/documents");
-		if($property_type == 'site') header("Location: " . BASEURL . "property/site");
-		if($property_type == 'vision') header("Location: " . BASEURL . "property/vision");
-		if($property_type == 'statisticscard') header("Location: " . BASEURL . "property/statisticscard");
-		if($property_type == 'statistics') header("Location: " . BASEURL . "property/statistics");
-		if($property_type == 'suites') header("Location: " . BASEURL . "property/suites");
-		if($property_type == 'building') header("Location: " . BASEURL . "property/building");
-		if($property_type == 'testimonial') header("Location: " . BASEURL . "property/testimonial");
-		if($property_type == 'homepage') header("Location: " . BASEURL . "property/homepage");
-		if($property_type == 'faqpage') header("Location: " . BASEURL . "property/faqpage");
-		if($property_type == 'statuspage') header("Location: " . BASEURL . "property/statuspage");
-		if($property_type == 'aboutpage') header("Location: " . BASEURL . "property/aboutpage");
-		if($property_type == 'cotage') header("Location: " . BASEURL . "property/cotage");
-		if($property_type == 'customhomes') header("Location: " . BASEURL . "property/customhomes");
-	}
-
-
-
-
-
-
 	
+		if($property_type == 'aboutpage') header("Location: " . BASEURL . "property/aboutpage");
+		if($property_type == 'homepage') header("Location: " . BASEURL . "property/homepage");
+		if($property_type == 'policypage') header("Location: " . BASEURL . "property/policypage");
+		if($property_type == 'slideshow') header("Location: " . BASEURL . "property/slideshow");
+		if($property_type == 'communities') header("Location: " . BASEURL . "property/communities");
+
+
+		
+	}
 
 
 

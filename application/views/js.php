@@ -1,11 +1,30 @@
+
 <script src="<?= BASEURL ?>public/js/jquery-3.5.1.js"></script>
 <script src="<?= BASEURL ?>public/js/bootstrap/bootstrap.bundle.min.js"></script>
+
+<!-- amenities map -->
+<script>
+	var BASEURL = '<?=BASEURL?>';
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDanoC6Q93qqpnIkqmC5IT9mVDR_MSYj6s"></script>
+<script src="<?= BASEURL ?>public/js/map.js"></script>
+<script>
+jQuery(document).ready(function($){
+	if ($('#map').length) {
+		initMap();
+	}
+	$('.map_cat.recreation').trigger('click');
+});
+</script>
+<!-- end amenities map -->
+
 <script>
     $(document).ready(function () {
         $('.submit-register').click(function () {
-            $('#registerModal').modal('hide');
-            $('#registerConfirmModal').modal('show');
+            // $('#registerModal').modal('hide');
+            // $('#registerConfirmModal').modal('show');
         });
+
     });
 </script>
 
@@ -218,8 +237,18 @@ if ($url_last == 'model'):
                 $(this).tab('show')
             })
 
+
+
         });
     </script>
     <?php
 endif;
 ?>
+
+
+
+
+
+
+
+

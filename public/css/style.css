@@ -265,11 +265,11 @@ a:hover {
 
     .navbar-nav > li.active > a {
         padding-top: 30px;
-        /* border-top: 6.5px solid #000000; */
-        border-top: 6.5px solid #ffffff;
+        border-top: 6.5px solid #000000;
+        /* border-top: 6.5px solid #ffffff; */
 
-        /* color: #6e6e6e !important; */
-        color: #000000 !important;
+        color: #6e6e6e !important;
+        /* color: #000000 !important; */
 
     }
 
@@ -877,6 +877,7 @@ hr.vertical {
 /*****/
 .logohvpSlide{
     object-fit: contain;
+    max-width: 100%;
 }
 .test{
     position: absolute;
@@ -917,4 +918,51 @@ hr.vertical {
 }
 .bildImages img:last-child{
     margin-left:50px;
+}
+@media (max-width: 767px) {
+    .bildImages{
+        flex-direction: column;
+    }
+    .bildImages img:last-child{
+        margin-left:0;
+    }
+}
+
+
+.navbar-nav > li > a{
+    font-size:16px; 
+}
+.aboutDes p{
+    font-size: 1.15rem;
+}
+.homeFontDes strong{
+    color:#000000;
+    font-family: 'Quattrocento', serif !important;
+
+}
+.homeFontDes p{
+    font-size: 1.15rem;
+}
+.innerCircle{
+    content: "";
+    position: absolute;
+    z-index: 2;
+    top: -6px;
+    left: calc(50% - 6px);
+    width: 12px;
+    height: 12px;
+    background-color: white;
+    border: 1px solid #ACACAC;
+    border-radius: 50%;
+}
+.fixFont{
+    font-family: 'Quattrocento', serif !important;
+    font-size: 3rem;
+}
+.navbar .dropdown-item.notHover:hover,.navbar .dropdown-item.notHover:focus{
+    color: #ffffff !important;
+    cursor: default;
+}
+.fontQua{
+    font-family: 'Quattrocento', serif !important;
 }

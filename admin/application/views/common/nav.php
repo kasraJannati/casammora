@@ -23,10 +23,11 @@
 							<li><a href="<?=BASEURL?>property/customhomes">Custom Homes</a></li> -->
 							
 							<!-- <li><a href="<?=BASEURL?>property/cotage">Cottage</a></li> -->
+							<!-- <li><a href="<?=BASEURL?>property/homepage">Home Page</a></li>
+							<li><a href="<?=BASEURL?>property/statuspage">Status Page</a></li> -->
 							<li><a href="<?=BASEURL?>property/homepage">Home Page</a></li>
-							<li><a href="<?=BASEURL?>property/statuspage">Status Page</a></li>
 							<li><a href="<?=BASEURL?>property/aboutpage">About Page</a></li>
-							<li><a href="<?=BASEURL?>property/faqpage">FAQ Page</a></li>
+							<li><a href="<?=BASEURL?>property/policypage">Policy Page</a></li>
 
 						
 
@@ -38,14 +39,17 @@
 						<ul>
 							<!-- <li><a href="<?=BASEURL?>blog/category">Category</a></li>
 							<li><a href="<?=BASEURL?>blog/article">Article</a></li> -->
-							<li><a href="<?=BASEURL?>property/testimonial">Testimonial</a></li>
+
+							<li><a href="<?=BASEURL?>property/slideshow">Slideshow</a></li>
+							<li><a href="<?=BASEURL?>property/Communities">Communities</a></li>
+							<!--
 							<li><a href="<?=BASEURL?>property/building">Building</a></li>
 							<li><a href="<?=BASEURL?>property/suites">Suites</a></li>
 							<li><a href="<?=BASEURL?>property/statistics">Statistics</a></li>
 							<li><a href="<?=BASEURL?>property/statisticscard">Statistics Card</a></li>
 							<li><a href="<?=BASEURL?>property/vision">Vision and proposal</a></li>
 							<li><a href="<?=BASEURL?>property/site">Site</a></li>
-							<li><a href="<?=BASEURL?>property/documents">Documents</a></li>
+							<li><a href="<?=BASEURL?>property/documents">Documents</a></li> -->
 
 
 						</ul>

@@ -181,7 +181,7 @@
             <?php
         endif;
         ?>
-        <div class="divider div-transparent div-dot mb-1"></div>
+        <div class="divider div-transparent div-dot mb-1"><span class="innerCircle"></span></div>
         <div class="row foot-box py-3">
             <div class="col-12 col-md text-center text-md-end">
                 <a class="float-md-start" href="#">
@@ -215,8 +215,8 @@
         </div>
         <div class="row copyright-box py-3 mt-4 text-center text-md-end quattrocento-sans-font">
             <div class="col">
-                <p><strong><a type="button" data-bs-toggle="modal" data-bs-target="#privacyPolicyModal">Privacy Policy</a> | Terms & Conditions</strong></p>
-                <p>&copy; 2020 Copyright CasaMorra Homes. All Rights Reserved</p>
+                <p><strong><a type="button" data-bs-toggle="modal" data-bs-target="#privacyPolicyModal">Privacy Policy</a></strong></p>
+                <p>&copy; 2021 Copyright CasaMorra Homes. All Rights Reserved</p>
             </div>
         </div>
     </div>
@@ -234,64 +234,76 @@
             <div class="modal-body">
                 <div class="row text-start justify-content-center py-2 quattrocento-sans-font">
                     <div class="col-11 col-md-8 col-lg-6 col-xl-4 mb-5 mb-lg-0">
-                        <form class="row g-3" id="register-modal">
+                        
+                        <form class="row g-3 validate" method="post" action="<?=BASEURL?>register" name="mc-embedded-subscribe-form">
                             <div class="col-12 text-center">
-                                <h3 class="display-5">
+                                <h3 class="display-5 fontQua">
                                     Register
                                 </h3>
-                                <div class="divider div-transparent div-dot my-5"></div>
+                                <div class="divider div-transparent div-dot my-5"><span class="innerCircle"></span></div>
 
                                 <p class="px-5">
                                     Register to receive the latest news and updates from CASAMORRA.
                                 </p>
                             </div>
                             <div class="col-12 my-1">
-                                <input type="text" class="form-control rounded-0" id="first_name" placeholder="First Name *">
+                                <input type="text" class="form-control rounded-0" name="FNAME" placeholder="First Name *" value="" id="mce-FNAME" required="required">
                             </div>
                             <div class="col-12 my-1">
-                                <input type="text" class="form-control rounded-0" id="last_name" placeholder="Last Name *">
+                                <input type="text" class="form-control rounded-0" name="LNAME" placeholder="Last Name *" value="" id="mce-LNAME" required="required">
                             </div>
                             <div class="col-12 my-1">
-                                <input type="email" class="form-control rounded-0" id="email_address" placeholder="Email Address *">
+                                <input type="email" class="form-control rounded-0" name="EMAIL" placeholder="Email Address *" required="required" id="mce-EMAIL">
                             </div>
                             <div class="col-12 my-1">
-                                <input type="text" class="form-control rounded-0" id="phone_number" placeholder="Phone Number *">
+                                <input type="text" class="form-control rounded-0" name="MMERGE3" placeholder="Phone Number" value="" id="mce-MMERGE3" required="required">
                             </div>
                             <div class="col-12 my-1">
-                                <select class="form-select" aria-label="Default select example">
+                                <select class="form-select" aria-label="Default select example" name="MMERGE5" id="mce-MMERGE5">
                                     <option selected>Select Community</option>
-                                    <option value="1">One</option>
-                                    <option value="2">Two</option>
-                                    <option value="3">Three</option>
+                                    <option value="Humber Valley">Humber Valley</option>
+                                    <option value="Bolton Gateway" disabled>Bolton Gateway</option>
+                                    <option value="The Graham Robinson" disabled>The Graham Robinson</option>
                                 </select>
                             </div>
                             <div class="col-12 my-1">
                                 <label class="form-label">Are you a broker?</label>
                                 <div class="form-check form-check-inline float-end">
-                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                    <input class="form-check-input" type="radio" name="MMERGE4" id="mce-MMERGE4-1" value="No">
                                     <label class="form-check-label" for="inlineRadio2">No</label>
                                 </div>
                                 <div class="form-check form-check-inline float-end">
-                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                    <input class="form-check-input" type="radio" name="MMERGE4" id="mce-MMERGE4-0" value="Yes">
                                     <label class="form-check-label" for="inlineRadio1">Yes</label>
                                 </div>
                             </div>
                             <div class="col-12 my-1">
                                 <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                    <label class="form-check-label" for="flexCheckDefault">
+                                    <input class="form-check-input" type="checkbox" value="1" id="flexCheckDefault" name="group[1173][1]" id="mce-group[1173]-1173-0">
+                                    <label class="form-check-label" for="flexCheckDefault" style="line-height:20px;">
                                         <small>
                                             I Consent. CasaMorra seeks your consent to send  you commercial electronic messages (such as email). You may withdraw your consent at any time. By clicking  above you attest that you are the sole holder and user of this email account.*
                                         </small>
                                     </label>
                                 </div>
                             </div>
+
+                            <!-- for mailchimp -->
+                            <div id="mce-responses" class="clear">
+                                <div class="response" id="mce-error-response" style="display:none"></div>
+                                <div class="response" id="mce-success-response" style="display:none"></div>
+                            </div>    
+                            <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_f81094fd9060d393d942d5057_20266b21a0" tabindex="-1" value=""></div>
+                            <!-- End for mailchimp -->
+
                             <div class="col-12 my-4">
                                 <div class="d-grid gap-2">
-                                    <button type="button" class="btn btn-dark rounded-0 submit-register"><strong>REGISTER</strong></button>
+                                    <button type="submit" class="btn btn-dark rounded-0 submit-register" name="subscribe" id="mc-embedded-subscribe"><strong>REGISTER</strong></button>
                                 </div>
                             </div>
                         </form>
+
                     </div>
                 </div>
             </div>
@@ -323,6 +335,8 @@
         </div>
     </div>
 </div>
+
+
 <!-- Modal Privacy Policy -->
 <div class="modal fade privacy-policy-modal quattrocento-sans-font" id="privacyPolicyModal" tabindex="-1" aria-labelledby="privacyPolicyModalCenterTitle" style="display: none;" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-fullscreen">
@@ -333,16 +347,17 @@
             <div class="modal-body">
                 <div class="row text-start justify-content-center py-2 quattrocento-sans-font">
                     <div class="col-11 col-md-9 col-lg-7 mb-5 mb-lg-0 text-center">
-                        <h3 class="display-5 mt-2">
-                            Privacy Policy
+
+                    <?php foreach ($policy as $count => $_): ?>
+                        <h3 class="display-5 mt-2 fontQua">
+                            <?=$_['title']?>
                         </h3>
-                        <div class="col-8 col-md-7 col-lg-6 mx-auto divider div-transparent div-dot my-5"></div>
-                        <p class="px-1 mb-5">
-                            CASAMORRA Homes respects the privacy of every individual. This Privacy Policy outlines the information CASAMORRA Homes may collect and how we may use that information. CASAMORRA Homes will not collect any personally identifiable information about you (for example, your name, address, telephone number or email address (“personal data”) unless you have provided it to us voluntarily.
+                        <div class="col-8 col-md-7 col-lg-6 mx-auto divider div-transparent div-dot my-5"><span class="innerCircle"></span></div>
+                        <p>
+                            <?=$_['description']?>
                         </p>
-                        <p class="px-">
-                            If you do not want your personal data collected, please do not submit it to us. Unless otherwise stated, when you do provide us with personal data, we may use that information in the following ways: we may store and process that information to better understand your needs and how we can improve our products and services. We may use that information to contact you. We do not now and do not intend to sell, rent or market personal data about you to third parties.
-                        </p>
+                    <?php endforeach;?>
+
                     </div>
                 </div>
             </div>
@@ -353,5 +368,31 @@
 
 <?php load_view('js'); ?>
 
+<!-- after register show popup -->
+<?php
+    if(isset($_GET['register'])):
+        $registerform = unserialize(urldecode($_GET['register']));
+        if($registerform == 1):?>
+        <script>
+        $(document).ready(function () {
+            $('#registerModal').modal('hide');
+            $('#registerConfirmModal').modal('show');
+        });
+        </script>
+        <?php
+       endif;
+    endif;
+?>
+<!-- END after register show popup -->
+
+
 </body>
 </html>
+
+
+
+
+
+
+
+

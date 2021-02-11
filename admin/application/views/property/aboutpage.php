@@ -20,8 +20,6 @@
 			<div class="col-md-12">
 				<?php if($property_type == 'aboutpage'): ?>
 					<h1>About Page</h1>
-				<?php else: ?>
-					<h1>Cottage</h1>
 				<?php endif;?>
 			</div>
 		</div>
@@ -39,8 +37,6 @@
 					<i class="fa fa-plus"></i>	
 					<?php if($property_type == 'aboutpage'): ?>
 						<span>About Page</span>
-					<?php else: ?>
-						<span>New Cotage</span>
 					<?php endif;?>
 				</a>
 			</div>

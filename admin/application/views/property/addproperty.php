@@ -20,8 +20,6 @@
 				
 				<?php if($property_type == 'communities'): ?>
 					<h1>Community - Add</h1>
-				<?php else: ?>
-					<h1>Retail - Add</h1>
 				<?php endif;?>
 			</div>
 		</div>
@@ -45,6 +43,7 @@
 					</div>
 				</div>
 
+				<?php if($property_type != 'communities'):?>
 				<div class="col-sm-6">
 					<div class="panel panel-default">
 						<div class="panel-heading">
@@ -55,6 +54,7 @@
 						</div>
 					</div>
 				</div>
+				<?php endif;?>
 
 			</div>
 
@@ -168,6 +168,7 @@
 					</div>
 				</div>
 
+				<?php if($property_type != 'communities'): ?>
 				<div class="col-sm-3">
 					<div class="panel panel-default">
 						<div class="panel-heading">
@@ -218,7 +219,6 @@
 						</div>
 					</div>
 				</div>
-				<?php if($property_type == 'communities'): ?>
 				<div class="col-sm-3">
 					<div class="panel panel-default">
 						<div class="panel-heading">
@@ -240,7 +240,7 @@
 						</div>
 					</div>
 				</div>
-				<?php endif;?>
+				
 
 				<div class="col-sm-3">
 					<div class="panel panel-default">
@@ -259,7 +259,6 @@
 
 			<div class="row">
 
-				<?php if($property_type == 'communities'): ?>
 				<div class="col-sm-3">
 					<div class="panel panel-default">
 						<div class="panel-heading">
@@ -315,7 +314,7 @@
 					</div>
 				</div>
 				
-				<?php else: ?>
+				
 
 				<div class="col-sm-3">
 					<div class="panel panel-default">
@@ -360,8 +359,8 @@
 						</div>
 					</div>
 				</div>
+				
 				<?php endif; ?>
-
 			</div>
 			<hr>
 
@@ -386,7 +385,7 @@
 						</div>
 					</div>
 				</div>
-				<?php if($property_type == 'communities'): ?>
+				<?php if($property_type != 'communities'): ?>
 				<div class="col-sm-6">
 					<div class="panel panel-default">
 						<div class="panel-heading">

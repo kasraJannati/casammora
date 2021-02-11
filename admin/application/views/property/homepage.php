@@ -20,8 +20,6 @@
 			<div class="col-md-12">
 				<?php if($property_type == 'homepage'): ?>
 					<h1>Home Page</h1>
-				<?php else: ?>
-					<h1>Cottage</h1>
 				<?php endif;?>
 			</div>
 		</div>
@@ -35,14 +33,12 @@
 		<div class="panel panel-default">
 			
 			<div class="notes-header">
-				<!-- <a href="<?=BASEURL?>property/addcustomproperty" class="btn btn-success btn-icon btn-icon-standalone" id="add-note">
+				<a href="<?=BASEURL?>property/addcustomproperty" class="btn btn-success btn-icon btn-icon-standalone" id="add-note">
 					<i class="fa fa-plus"></i>	
 					<?php if($property_type == 'homepage'): ?>
-						<span>Home Page</span>
-					<?php else: ?>
-						<span>New Cotage</span>
+						<span>home Page</span>
 					<?php endif;?>
-				</a> -->
+				</a>
 			</div>
 			<div class="panel-body">
 
@@ -76,9 +72,9 @@
 								<a href="<?=BASEURL?>property/editcustomproperty/<?=$value['id']?>" class="btn btn-info btn-sm btn-icon icon-left">
 									Edit
 								</a>
-								<!-- <a href="javascript: deleteitem(<?=$value['id']?>, '<?=$value['title']?>');" class="btn btn-danger btn-sm btn-icon icon-left">
+								<a href="javascript: deleteitem(<?=$value['id']?>, '<?=$value['title']?>');" class="btn btn-danger btn-sm btn-icon icon-left">
 									Delete
-								</a> -->
+								</a>
 							</td>
 						</tr>
 

@@ -1,3 +1,5 @@
+<?php //load_view('property/customhomes')?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -11,16 +13,13 @@
 <?php load_view('common/nav')?>
 
 
-
 <div class="main-content">
 
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
 				<?php if($property_type == 'communities'): ?>
-					<h1>Communities</h1>
-				<?php else: ?>
-					<h1>Retail</h1>
+					<h1>Communities Page</h1>
 				<?php endif;?>
 			</div>
 		</div>
@@ -34,12 +33,10 @@
 		<div class="panel panel-default">
 			
 			<div class="notes-header">
-				<a href="<?=BASEURL?>property/addproperty" class="btn btn-success btn-icon btn-icon-standalone" id="add-note">
+				<a href="<?=BASEURL?>property/addcustomproperty" class="btn btn-success btn-icon btn-icon-standalone" id="add-note">
 					<i class="fa fa-plus"></i>	
 					<?php if($property_type == 'communities'): ?>
-						<span>New Community</span>
-					<?php else: ?>
-						<span>New Retail</span>
+						<span>community</span>
 					<?php endif;?>
 				</a>
 			</div>
@@ -67,11 +64,12 @@
 
 					<tbody>
 					<?php foreach($properties as $value): ?>
+				
 						<tr class="odd gradeX">
 							<td><img src="<?=BASEURL?>../files/source/<?=$value['hero_image']?>" width="50"/></td>
 							<td><?=$value['title']?></td>
 							<td>
-								<a href="<?=BASEURL?>property/editproperty/<?=$value['id']?>" class="btn btn-info btn-sm btn-icon icon-left">
+								<a href="<?=BASEURL?>property/editcustomproperty/<?=$value['id']?>" class="btn btn-info btn-sm btn-icon icon-left">
 									Edit
 								</a>
 								<a href="javascript: deleteitem(<?=$value['id']?>, '<?=$value['title']?>');" class="btn btn-danger btn-sm btn-icon icon-left">
@@ -97,7 +95,7 @@
 	<div class="modal-dialog">
 		<div class="modal-content">
 
-			<form role="form" method="post" action="<?=BASEURL?>property/deleteproperty">
+			<form role="form" method="post" action="<?=BASEURL?>property/deletecustomproperty">
 
 				<input type="hidden" name="id" value="" id="id">
 
